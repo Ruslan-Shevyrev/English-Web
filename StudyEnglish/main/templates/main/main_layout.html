@@ -16,20 +16,19 @@
 <body>
     <header class="header-of-page">
         <div class="header-content">
-            <a href="" class="logo"><i class="fa-solid fa-heart"></i>Love is English</a>
+            <div class="header-top">
+                <a href="{% url 'home' %}" class="logo"><i class="fa-solid fa-heart"></i>Love is English</a>
+                <div class="auth">
+                    account
+                </div>
+            </div>
             <div class="nav-menu">
                 <div class="nav-item">
-                    <a href="">Главная</a>
-                </div>
-                <div class="nav-item">
-                    <a href="">Обо мне</a>
+                    <a href="{% url 'about' %}">Обо мне</a>
                 </div>
                 <div class="nav-item">
                     <a href="">Контакты</a>
                 </div>
-            </div>
-            <div class="auth">
-                account
             </div>
         </div>
     </header>

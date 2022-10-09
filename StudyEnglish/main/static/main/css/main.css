@@ -6,28 +6,29 @@ a {
     text-decoration: none;
 }
 
-
 .header-of-page{
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color:#A9A9A9;
-    height: 72px;
-    align-items: center;
 }
 
 .header-content{
     display: flex;
-    margin: auto;
-    width: 92%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.header-top{
+    display: flex;
     justify-content: space-between;
+    width: 92%;
 }
 
 .header-content .logo {
-    font-size: 22px;
-    color: #800000;
-    line-height: 32px;
+    font-size: 72px;
+    color: #6495ED;
+    line-height: 78px;
     font-weight: bold;
 }
 
@@ -39,35 +40,45 @@ a {
 
 .header-content .logo:hover > i{
     color: #BB0000;
-    font-size: 28px;
+    font-size: 78px;
     padding-right: 7px;
     padding-left: 0px;
 }
 
 .header-content .nav-menu{
-    display: flex
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #404040;
+    margin-top: 10px;
+    height: 48px;
 }
 
 .header-content .nav-menu .nav-item{
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .header-content .nav-menu .nav-item > a{
-    display: block;
+    padding-left: 50px;
+    padding-right:50px;
     line-height: 36px;
     font-size: 22px;
-    color: #000000;
-    -webkit-transition: 0.15s;
-    -o-transition: 0.15s;
-    transition: 0.6s;
+    color: #ffffff;
+    -webkit-transition: transform 0.6s;
+    -o-transition: transform 0.6s;
+    transition: transform 0.6s;
     cursor: pointer;
     text-decoration: none;
+    height:100%;
+    display: flex;
+    align-items: center;
 }
 
-.header-content .nav-menu .nav-item > a:hover{
-    transform:scale(1.05)
+.header-content .nav-menu .nav-item:hover {
+    background: #6495ED;
 }
 
 main{
-DISPLAY:NONE;
+    padding-top:72px;
 }
