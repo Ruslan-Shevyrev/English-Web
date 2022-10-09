@@ -8,11 +8,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> {% block title%}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/FontAwesome/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/FontAwesome/brands.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/FontAwesome/solid.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    {% block content%}
+    <header class="header-of-page">
+        <div class="header-content">
+            <a href="" class="logo"><i class="fa-solid fa-heart"></i>Love is English</a>
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="">Главная</a>
+                </div>
+                <div class="nav-item">
+                    <a href="">Обо мне</a>
+                </div>
+                <div class="nav-item">
+                    <a href="">Контакты</a>
+                </div>
+            </div>
+            <div class="auth">
+                account
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content%}
 
-    {% endblock %}
+        {% endblock %}
+    </main>
 </body>
 </html>

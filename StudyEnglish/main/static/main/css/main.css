@@ -1,3 +1,73 @@
 body {
-    background: red
+    background: #D3D3D3
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header-of-page{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#A9A9A9;
+    height: 72px;
+    align-items: center;
+}
+
+.header-content{
+    display: flex;
+    margin: auto;
+    width: 92%;
+    justify-content: space-between;
+}
+
+.header-content .logo {
+    font-size: 22px;
+    color: #800000;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.header-content .logo > i{
+    padding-right: 10px;
+    padding-left: 3px;
+    transition: 1s ease;
+}
+
+.header-content .logo:hover > i{
+    color: #BB0000;
+    font-size: 28px;
+    padding-right: 7px;
+    padding-left: 0px;
+}
+
+.header-content .nav-menu{
+    display: flex
+}
+
+.header-content .nav-menu .nav-item{
+    margin-left: 50px;
+}
+
+.header-content .nav-menu .nav-item > a{
+    display: block;
+    line-height: 36px;
+    font-size: 22px;
+    color: #000000;
+    -webkit-transition: 0.15s;
+    -o-transition: 0.15s;
+    transition: 0.6s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-content .nav-menu .nav-item > a:hover{
+    transform:scale(1.05)
+}
+
+main{
+DISPLAY:NONE;
 }
