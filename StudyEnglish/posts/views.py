@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Articles
 
 
 def all_posts(request):
-    return render(request, 'posts/all_posts.html')
+    posts = Articles.objects.order_by('-date')
+    return render(request, 'posts/all_posts.html', {'posts': posts})

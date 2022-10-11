@@ -5,4 +5,10 @@
 
 {% block content %}
     <h1>Посты</h1>
+    {% for el in posts %}
+    <div class="alert alert-primary">
+        <h3> {{el.title}}</h3>
+        <p>{{el.full_text|safe}}</p>
+    </div>
+    {% endfor %}
 {% endblock %}
