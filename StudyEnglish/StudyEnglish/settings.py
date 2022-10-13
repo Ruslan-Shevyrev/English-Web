@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main',
-    'auth',
+    'auth_user',
     'blog',
     'ckeditor',
     'django_rename_app',
